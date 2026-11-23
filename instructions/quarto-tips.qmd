@@ -4,10 +4,10 @@
 
 You can decide when to use `.qmd` vs `.ipynb` for structuring your code, but I recommend the following guidelines:
 
-1. If the file contains **any code** (either in `R` or `Python`), ALWAYS use `.ipynb`.
-2. Do not mix `R` and `Python` in the same notebook.
-3. If the file is **purely markdown** without code, use `.qmd`.
-4. Use Quarto includes to modularize your content (see below for more details). This is also demonstrated in the project skeleton.
+1.  If the file contains **any code** (either in `R` or `Python`), ALWAYS use `.ipynb`.
+2.  Do not mix `R` and `Python` in the same notebook.
+3.  If the file is **purely markdown** without code, use `.qmd`.
+4.  Use Quarto includes to modularize your content (see below for more details). This is also demonstrated in the project skeleton.
 
 ## Quarto Includes
 
@@ -17,12 +17,12 @@ Quarto includes (e.g., `{{< include _content.qmd >}}`) are highly recommended fo
 
 ### Why Use Quarto Includes?
 
-1. **Modularization**: Breaking your project into smaller, reusable chunks simplifies the management of complex documents. You can work on specific sections without altering the entire project.
-  
-2. **Reusability**: Includes allow you to reuse content blocks across multiple documents, making them ideal for repetitive sections like headers or footers.
+1.  **Modularization**: Breaking your project into smaller, reusable chunks simplifies the management of complex documents. You can work on specific sections without altering the entire project.
 
-3. **Consistency**: By using includes, you ensure uniformity across your documents. Updating an include file will automatically apply the changes wherever it's used.
+2.  **Reusability**: Includes allow you to reuse content blocks across multiple documents, making them ideal for repetitive sections like headers or footers.
 
-4. **Simplifies Collaboration**: In team settings, includes allow different contributors to work on separate sections simultaneously, reducing merge conflicts and making the project easier to maintain.
+3.  **Consistency**: By using includes, you ensure uniformity across your documents. Updating an include file will automatically apply the changes wherever it's used.
 
-5. **Improved Organization**: Includes help keep your main files clean and focused by loading content from separate, well-organized files. This makes your project more manageable and easier to navigate.
+4.  **Simplifies Collaboration**: In team settings, includes allow different contributors to work on separate sections simultaneously, reducing merge conflicts and making the project easier to maintain.
+
+5.  **Improved Organization**: Includes help keep your main files clean and focused by loading content from separate, well-organized files. This makes your project more manageable and easier to navigate.
