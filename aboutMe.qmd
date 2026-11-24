@@ -1,8 +1,13 @@
 ---
 title: "Chloe Jones"
+toc: false
+page-layout: full
+code-tools: false
 about:
   template: trestles
-  image: headshot.JPG
+  image: sticker_headshot.png
+  image-width: 30em
+  image-shape: rectangle
   links:
     - icon: linkedin
       text: LinkedIn

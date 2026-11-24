@@ -2,14 +2,14 @@
 
 ## Results
 
-| Measure                          | Value                 |
-|----------------------------------|-----------------------|
-| Patterns collected               | \[N\]                 |
-| Pattern IDs tried                | \[M\]                 |
-| Hit rate (valid public patterns) | \[X\]%                |
-| Collection time                  | \[Y\] hours           |
-| Knitting / Crochet / Other       | \[a\] / \[b\] / \[c\] |
-| Free patterns                    | \[Z\]%                |
+| Measure                          | Value               |
+|----------------------------------|---------------------|
+| Patterns collected               | 30,038              |
+| Pattern IDs tried                | 35,750              |
+| Hit rate (valid public patterns) | 84%                 |
+| Collection time                  | \~ 4 hours          |
+| Knitting / Crochet / Other       | 17641 / 12171 / 226 |
+| Free patterns                    | 26%                 |
 
 ## Challenges
 
