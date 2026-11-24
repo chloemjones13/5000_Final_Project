@@ -12,7 +12,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
+      - href: aboutMe.qmd
         text: About Me
       - href: report/report.qmd
         text: Report

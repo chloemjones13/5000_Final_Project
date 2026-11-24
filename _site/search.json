@@ -385,22 +385,22 @@
     "text": "Always remember the following Debugging Steps:\n\nStep A: Copy the error message and search it online (Google or similar).\nStep B: Look through forums or documentation to find a solution.\nStep C: Implement the solution.\nStep D: If you’re still stuck, ask for help from classmates, TAs, or professors.\nStep E: Move on to the next issue and repeat the process.\n\n\n(Note: You can also use ChatGPT for debugging, but be cautious as the solutions may sometimes be inaccurate or incomplete.)"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "aboutMe.html",
+    "href": "aboutMe.html",
     "title": "About Me",
     "section": "",
     "text": "Hello, I’m Chloe Jones! Currently I am a data science graduate student at Georgetown University (a far way from home), working toward my M.S. in Data Science and Analytics. Before moving to DC, I graduated in the spring of 2026 with a B.S. in Computer Science from Texas State University, with minors in Mathematics and Data Analytics. I also very proudly played soccer for Texas State University and won the conference championship my senior year!\nMy background is in applied machine learning: a sales enablement computer vision internship at Dell Technologies (2025), an AI/ML internship at Nokia (2026), and research on large-scale electronic health record data at Texas State (2024–2026)."
   },
   {
-    "objectID": "about.html#academic-interests",
-    "href": "about.html#academic-interests",
+    "objectID": "aboutMe.html#academic-interests",
+    "href": "aboutMe.html#academic-interests",
     "title": "About Me",
     "section": "Academic Interests",
     "text": "Academic Interests\n\nMachine learning in healthcare\nLarge language models\nComputer vision and deep learning\nApplying machine learning to problems in public policy"
   },
   {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
+    "objectID": "aboutMe.html#education",
+    "href": "aboutMe.html#education",
     "title": "About Me",
     "section": "Education",
     "text": "Education\n\n2022: Hebron High School\n2026: Texas State University, B.S. in Computer Science\n2027 (expected): Georgetown University, M.S. in Data Science and Analytics"
