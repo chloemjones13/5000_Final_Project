@@ -385,18 +385,39 @@
     "text": "Always remember the following Debugging Steps:\n\nStep A: Copy the error message and search it online (Google or similar).\nStep B: Look through forums or documentation to find a solution.\nStep C: Implement the solution.\nStep D: If you’re still stuck, ask for help from classmates, TAs, or professors.\nStep E: Move on to the next issue and repeat the process.\n\n\n(Note: You can also use ChatGPT for debugging, but be cautious as the solutions may sometimes be inaccurate or incomplete.)"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Hello, I’m Chloe Jones! Currently I am a data science graduate student at Georgetown University (a far way from home), working toward my M.S. in Data Science and Analytics. Before moving to DC, I graduated in the spring of 2026 with a B.S. in Computer Science from Texas State University, with minors in Mathematics and Data Analytics. I also very proudly played soccer for Texas State University and won the conference championship my senior year!\nMy background is in applied machine learning: a sales enablement computer vision internship at Dell Technologies (2025), an AI/ML internship at Nokia (2026), and research on large-scale electronic health record data at Texas State (2024–2026)."
+  },
+  {
+    "objectID": "about.html#academic-interests",
+    "href": "about.html#academic-interests",
+    "title": "About Me",
+    "section": "Academic Interests",
+    "text": "Academic Interests\n\nMachine learning in healthcare\nLarge language models\nComputer vision and deep learning\nApplying machine learning to problems in public policy"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\n2022: Hebron High School\n2026: Texas State University, B.S. in Computer Science\n2027 (expected): Georgetown University, M.S. in Data Science and Analytics"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Landing page",
     "section": "",
-    "text": "Audio instructions:\nIf you want, you can listen to the instructions:\nSource: Text-to-speech conversion done with Amazon Polly on AWS\nNote: These audio instructions should not be included in your final submission or repository, once you are done wiht them, please delete the files and remove them from the website."
+    "text": "To begin the project, first read the instruction document (click here). This document is also accessible from the navigation bar.\nOnce you’ve completed that, you can proceed with the instructions found throughout the website."
   },
   {
     "objectID": "index.html#getting-started",
     "href": "index.html#getting-started",
     "title": "Landing page",
-    "section": "Getting Started",
-    "text": "Getting Started\nTo begin the project, first read the instruction document (click here). This document is also accessible from the navigation bar.\nOnce you’ve completed that, you can proceed with the instructions found throughout the website."
+    "section": "",
+    "text": "To begin the project, first read the instruction document (click here). This document is also accessible from the navigation bar.\nOnce you’ve completed that, you can proceed with the instructions found throughout the website."
   },
   {
     "objectID": "index.html#what-to-include-on-this-page",
@@ -415,14 +436,14 @@
   {
     "objectID": "instructions/github-usage.html",
     "href": "instructions/github-usage.html",
-    "title": "DSAN-5000: Project",
+    "title": "What makes a pattern popular?",
     "section": "",
     "text": "Your project’s source code, documentation, and website will be hosted on GitHub, which serves as the main repository for your project. Proper organization and regular updates are key to effective collaboration.\nIMPORTANT: Proficiency in GitHub for collaboration is a valuable resume skill. Being able to join a team and immediately contribute is highly sought after. Embrace Git fully now and graduate with a critical skill for your career.\n\n\n\nOne group member creates a new repository on their personal GitHub account and adds the other members as collaborators; each member then clones it locally.\nChoose visibility based on your submission option (see Code Submission):\n\nPrivate: only your group and anyone you add can see it.\nPublic: anyone in the world can see, copy, or reuse your code. Only choose this if all group members agree.\n\nDo not make your repository public if your project uses sensitive data or confidential intellectual property.\n\n\n\n\nYour grade will reflect how effectively you use Git, including:\n\nIncremental progress on the project\nFrequency and quality of commits\nRepository structure and organization\nAdherence to the guidelines below\n\nCommit and push regularly (git add, git commit, git push) to keep your work synced.\n1. Logical Repository Structure\n\nOrganize files logically so collaborators and TAs can navigate easily.\nKeep files well documented and code easy to follow.\n\n2. Commit Regularly\n\nCommit frequently with clear, meaningful messages.\n\nGood: Added data cleaning script for tabular data\nPoor: Fix\n\n\n3. Data Storage\n\nDo not store large data files in your repository.\n\nStore raw data in raw-data and processed data in processed-data; add both folders to .gitignore.\nTip: Use external storage such as Google Drive or GU Domains for large datasets and link to them in the repository.\n\n\n4. Syncing with GU Domains\n\nKeep your repository and GU Domains website in sync (this should be fully automated), especially before the final submission, to avoid losing points.\n\n5. Code Documentation\n\nDocument each file and function clearly.\nInclude a README.md covering the project purpose, how to run the code, and dependencies.\n\n\n\n\nChoose one of the three options below.\nOption 1: Private repository, upload archive to Canvas\n\nWhen finished, clone a fresh copy of the final repository and compress it (e.g., .zip). Exclude data and large files; the archive must be under 50MB.\nSince the instructor cannot see your commit history this way, also upload a PDF of your full commit history. Generate it from inside the repository with:\n\ngit log --pretty=format:\"%h | %an | %ad | %s\" --date=short &gt; commit-history.txt\nOption 2: Private repository, give the instructor access\n\nToward the end of the semester, add the instructor as a collaborator: jh2343@georgetown.edu\nKeep the repository private; adding a collaborator is how you share it.\nUpload the repository URL to Canvas.\n\nOption 3: Public repository\n\nUpload the repository URL to Canvas when finished.\nA public repository is visible to anyone in the world, who can view, copy, or reuse your work.\nOnly choose this if all group members agree, and never if your project involves sensitive data or confidential intellectual property."
   },
   {
     "objectID": "instructions/github-usage.html#github",
     "href": "instructions/github-usage.html#github",
-    "title": "DSAN-5000: Project",
+    "title": "What makes a pattern popular?",
     "section": "",
     "text": "Your project’s source code, documentation, and website will be hosted on GitHub, which serves as the main repository for your project. Proper organization and regular updates are key to effective collaboration.\nIMPORTANT: Proficiency in GitHub for collaboration is a valuable resume skill. Being able to join a team and immediately contribute is highly sought after. Embrace Git fully now and graduate with a critical skill for your career.\n\n\n\nOne group member creates a new repository on their personal GitHub account and adds the other members as collaborators; each member then clones it locally.\nChoose visibility based on your submission option (see Code Submission):\n\nPrivate: only your group and anyone you add can see it.\nPublic: anyone in the world can see, copy, or reuse your code. Only choose this if all group members agree.\n\nDo not make your repository public if your project uses sensitive data or confidential intellectual property.\n\n\n\n\nYour grade will reflect how effectively you use Git, including:\n\nIncremental progress on the project\nFrequency and quality of commits\nRepository structure and organization\nAdherence to the guidelines below\n\nCommit and push regularly (git add, git commit, git push) to keep your work synced.\n1. Logical Repository Structure\n\nOrganize files logically so collaborators and TAs can navigate easily.\nKeep files well documented and code easy to follow.\n\n2. Commit Regularly\n\nCommit frequently with clear, meaningful messages.\n\nGood: Added data cleaning script for tabular data\nPoor: Fix\n\n\n3. Data Storage\n\nDo not store large data files in your repository.\n\nStore raw data in raw-data and processed data in processed-data; add both folders to .gitignore.\nTip: Use external storage such as Google Drive or GU Domains for large datasets and link to them in the repository.\n\n\n4. Syncing with GU Domains\n\nKeep your repository and GU Domains website in sync (this should be fully automated), especially before the final submission, to avoid losing points.\n\n5. Code Documentation\n\nDocument each file and function clearly.\nInclude a README.md covering the project purpose, how to run the code, and dependencies.\n\n\n\n\nChoose one of the three options below.\nOption 1: Private repository, upload archive to Canvas\n\nWhen finished, clone a fresh copy of the final repository and compress it (e.g., .zip). Exclude data and large files; the archive must be under 50MB.\nSince the instructor cannot see your commit history this way, also upload a PDF of your full commit history. Generate it from inside the repository with:\n\ngit log --pretty=format:\"%h | %an | %ad | %s\" --date=short &gt; commit-history.txt\nOption 2: Private repository, give the instructor access\n\nToward the end of the semester, add the instructor as a collaborator: jh2343@georgetown.edu\nKeep the repository private; adding a collaborator is how you share it.\nUpload the repository URL to Canvas.\n\nOption 3: Public repository\n\nUpload the repository URL to Canvas when finished.\nA public repository is visible to anyone in the world, who can view, copy, or reuse your work.\nOnly choose this if all group members agree, and never if your project involves sensitive data or confidential intellectual property."
   },

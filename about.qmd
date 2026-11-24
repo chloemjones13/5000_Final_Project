@@ -1,0 +1,37 @@
+---
+title: "About Me"
+---
+
+::::: columns
+::: {.column width="40%"}
+![](headshot.JPG){fig-align="center" width="50%"}
+:::
+
+::: {.column width="55%"}
+Hello, I'm Chloe Jones! Currently I am a data science graduate student at Georgetown University (a far way from home), working toward my M.S. in Data Science and Analytics. Before moving to DC, I graduated in the spring of 2026 with a B.S. in Computer Science from Texas State University, with minors in Mathematics and Data Analytics. I also very proudly played soccer for Texas State University and won the conference championship my senior year!
+
+My background is in applied machine learning: a sales enablement computer vision internship at Dell Technologies (2025), an AI/ML internship at Nokia (2026), and research on large-scale electronic health record data at Texas State (2024–2026).
+:::
+:::::
+
+:::::: columns
+::: {.column width="45%"}
+## Academic Interests
+
+- Machine learning in healthcare
+- Large language models
+- Computer vision and deep learning
+- Applying machine learning to problems in public policy
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+## Education
+
+- **2022:** Hebron High School
+- **2026:** Texas State University, B.S. in Computer Science
+- **2027 (expected):** Georgetown University, M.S. in Data Science and Analytics
+:::
+::::::

@@ -1,4 +1,7 @@
+.env
+.DS_Store
+_site/
+data/
+.ipynb_checkpoints/
 /.quarto/
 **/*.quarto_ipynb
-.env
-data/raw-data
