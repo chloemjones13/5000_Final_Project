@@ -1,9 +1,7 @@
 ---
-
 title: "What Makes a Pattern Popular?"
 subtitle: "A data-driven look at 30,000 knitting and crochet patterns on Ravelry"
 title-block-banner: true
----
 ---
 
 ## Getting Started
