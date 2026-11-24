@@ -39,7 +39,7 @@ website:
     center: "Independent student project. Uses the Ravelry API; not affiliated with or endorsed by Ravelry."
 format:
   html:
-    theme: minty
+    theme: quartz
     code-fold: true
     code-tools: true
     toc: true

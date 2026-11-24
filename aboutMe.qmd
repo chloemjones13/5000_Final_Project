@@ -6,7 +6,7 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: YOUR_LINKEDIN_URL
+      href: www.linkedin.com/in/chloe-jones-13cj
     - icon: github
       text: GitHub
       href: https://github.com/chloemjones13
