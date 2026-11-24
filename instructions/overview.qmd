@@ -4,16 +4,19 @@ Author(s): Dr. H and Gerard Pendleton Thurston the 4th
 
 `Note:` You can delete this folder and remove it from the project website once you have read and understood the instructions. It shouldn't be part of your final submission.
 
-**Audio instructions:** 
+**Audio instructions:**
 
 If you want, you can listen to the instructions:
 
-<audio controls><source src="../audio/instruction-page.mp3" type="audio/mpeg"></audio>
+<audio controls>
+
+<source src="../audio/instruction-page.mp3" type="audio/mpeg">
+
+</audio>
 
 <sup> **Source**: Text-to-speech conversion done with Amazon Polly on AWS </sup>
 
-`Note`: These audio instructions should not be included in your final submission or repository, once you are done wiht them, please delete the files and remove them from the website. 
-
+`Note`: These audio instructions should not be included in your final submission or repository, once you are done wiht them, please delete the files and remove them from the website.
 
 # Overview
 
@@ -39,10 +42,10 @@ This portfolio will be your professional showcase, representing what you’ve ac
 
 **LATE POLICY:** See the syllabus
 
-**MEMBERSHIP**: This project can be completed individually, or as a small group project with up to a maximum of **2 students** per group. You can choose your own group members. 
+**MEMBERSHIP**: This project can be completed individually, or as a small group project with up to a maximum of **2 students** per group. You can choose your own group members.
 
 - `Everyone`, even students working individually, must add themselves to the project group on Canvas (this is tedious but required by the Canvas grading system)
-  - [https://georgetown.instructure.com/courses/193247/groups#tab-28372](https://georgetown.instructure.com/courses/193247/groups#tab-28372)
+  - <https://georgetown.instructure.com/courses/193247/groups#tab-28372>
 - If you choose to work in a group, all group members must contribute equally.
 - Collaboration and teamwork are essential; ensure that the workload is evenly distributed among group members.
 
@@ -52,26 +55,25 @@ This portfolio will be your professional showcase, representing what you’ve ac
   - [ ] A URL pointing to your project on GU Domains.
   - [ ] A URL to your GitHub repository.
   - [ ] At the very end, print the following pages from your website as PDFs, stitch them into a single PDF
-      - Landing page
-      - Report
-      - Technical details
-        - Data collection
-        - Data cleaning
-        - EDA
-        - unsupervised-learning
-        - supervised-learning
+    - Landing page
+    - Report
+    - Technical details
+      - Data collection
+      - Data cleaning
+      - EDA
+      - unsupervised-learning
+      - supervised-learning
   - [ ] Upload a compressed zipped directory of your course website AND a compressed zipped directory of your code (without the data files).
 
 `IMPORTANT:` The PDF submission WILL be automatically processed by Canvas in a plagiarism-checking and LLM usage software tool called `turn-it-in`. It is your responsibility to ensure that your submission is original and that you have properly cited all sources.
 
 This is done to have a "static," time-stamped version of your final submission.
 
-
-**OPTIONAL BONUS PRESENTATION**: During the final week of class, you have the opportunity to present your project results for up to +7.5 bonus points. To qualify, you must create a concise 10-minute presentation with an accompanying slide deck. Simply opening your website and talking about it will not be sufficient. Sign-up will be voluntary and will be made available towards the end of the semester. 
+**OPTIONAL BONUS PRESENTATION**: During the final week of class, you have the opportunity to present your project results for up to +7.5 bonus points. To qualify, you must create a concise 10-minute presentation with an accompanying slide deck. Simply opening your website and talking about it will not be sufficient. Sign-up will be voluntary and will be made available towards the end of the semester.
 
 # Code
 
-For this project, you can use  R or Python, or both. However, python is recommended, since it is more heavily represented in the class. 
+For this project, you can use R or Python, or both. However, python is recommended, since it is more heavily represented in the class.
 
 ## Python package (optional)
 
@@ -81,15 +83,14 @@ While a package would typically have its own GitHub repository, for this project
 
 The skeleton for the package is not provided in the repo, but you can recycle what you created in past assignments.
 
+{{< include topic-selection.qmd >}}
 
- {{< include topic-selection.qmd >}}
+{{< include github-usage.qmd >}}
 
- {{< include github-usage.qmd >}}
+{{< include website-structure.qmd >}}
 
- {{< include website-structure.qmd >}}
+{{< include expectations.qmd >}}
 
- {{< include expectations.qmd >}}
+{{< include quarto-tips.qmd >}}
 
- {{< include quarto-tips.qmd >}}
-
- {{< include llm-usage.qmd >}}
+{{< include llm-usage.qmd >}}

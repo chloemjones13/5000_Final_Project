@@ -1,14 +1,14 @@
-# Instructions 
+# Instructions
 
 `Note`: You should remove these instructions once you have read and understood them. They should not be included in your final submission.
 
-`Remember:` Exactly what do you on this page will be specific you your project and data. Some things might "make more sense" on other pages, depending on your workflow, for example, you might feel that normalization and scaling should be included in a later section, dealing with machine learning, rather than here, that is totally fine. Organize your project in the way that makes the most sense to you.  
+`Remember:` Exactly what do you on this page will be specific you your project and data. Some things might "make more sense" on other pages, depending on your workflow, for example, you might feel that normalization and scaling should be included in a later section, dealing with machine learning, rather than here, that is totally fine. Organize your project in the way that makes the most sense to you.
 
 ## Suggested page structure
 
 Here’s one suggested structure for organizing your technical pages. You can adjust this as needed:
 
-`Audience`:Remember that these are written for a technical audience. Assume they have completed the DSAN program, but would appreciate refreshers of the important concepts. 
+`Audience`:Remember that these are written for a technical audience. Assume they have completed the DSAN program, but would appreciate refreshers of the important concepts.
 
 - **Introduction and Motivation:** Briefly outline your plan. What are you doing on this page, and why? Provide context and explain the goals of your analysis.
 - **Overview of Methods:** Give a concise explanation of the methods used. For example, if using K-Means clustering, describe what it is, how it works, the inputs and outputs, and key hyperparameters.
@@ -23,7 +23,7 @@ Here’s one suggested structure for organizing your technical pages. You can ad
 
 By the end of this phase, your cleaned data should be well-documented and ready for further stages, such as **Exploratory Data Analysis (EDA)** and **Machine Learning**.
 
-## What to address 
+## What to address
 
 The following is a list of some of the things you should address on this page. This list is not exhaustive, and you should use your judgment to decide what is most relevant to your project.
 
@@ -55,7 +55,6 @@ Possible things to include:
 - **Addressing Outliers**: Explain how outliers were treated (e.g., removal, transformation, or retaining them for analysis).
 - **Visualize Outliers**: Use visualizations (e.g., box plots) to show how outliers were managed.
 
-
 **Data Type Correction and Formatting**:
 
 - **Review Data Types**: Summarize the types of variables (numerical, categorical, date-time, etc.) and ensure they are correctly formatted.
@@ -72,5 +71,3 @@ Possible things to include:
 
 - **Data Filtering**: Explain any subsetting or filtering of the data (e.g., selecting quantitative or qualitative columns).
 - **Rationale**: Justify why you chose to work with a particular subset of the data.
-
-

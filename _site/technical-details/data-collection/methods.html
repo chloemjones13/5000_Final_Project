@@ -158,7 +158,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#methods" id="toc-methods" class="nav-link active" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link active" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#sampling" id="toc-sampling" class="nav-link" data-scroll-target="#sampling">Sampling</a></li>
+  <li><a href="#saving-data" id="toc-saving-data" class="nav-link" data-scroll-target="#saving-data">Saving Data</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -170,10 +175,20 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="methods" class="level1">
 <h1>Methods</h1>
-<p>In this section, provide an overview summary of the methods used on this page. This should include a brief description of the key techniques, algorithms, tools, or processes employed in your work. Make sure to outline the approach taken for data collection, processing, analysis, or any specific technical steps relevant to the project.</p>
-<p>If you are developing a package, include a reference to the relevant documentation and provide a link here for easy access. Ensure that the package details are properly documented in its dedicated section, but mentioned and connected here for a complete understanding of the methods used in this project.</p>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>All data comes from the Ravelry_API. I used read only credentials meaning I could only access public pattern data. I requested pattern details from the ‘/patterns.json’ endpoint. I stored by credentials in my .env file and made sure to put it in the .gitignore.</p>
+</section>
+<section id="sampling" class="level2">
+<h2 class="anchored" data-anchor-id="sampling">Sampling</h2>
+<p>Every pattern has a id and when you collect through Ravlerys search it returns the top patterns and since i’m analyzing popularity i need a range of patterns not just the most popular. So instead I randomly selected id’s for each batch and requested specific pattern id’s.</p>
+</section>
+<section id="saving-data" class="level2">
+<h2 class="anchored" data-anchor-id="saving-data">Saving Data</h2>
+<p>patterns were saved on one per line after each batch so a crash or error would lose at most one batch.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
