@@ -3,12 +3,15 @@ project:
   render:
     - "*.qmd"
     - "*.ipynb"
-    - "!xtra"
+    - "!xtra"    
 
 website:
   title: "What makes a pattern popular?"
   favicon: "assets/gu-logo.png"
   navbar:
+    right:
+      - icon: github
+        href: https://github.com/chloemjones13/5000_Final_Project
     left:
       - href: index.qmd
         text: Home
@@ -36,10 +39,14 @@ website:
     center: "Independent student project. Uses the Ravelry API; not affiliated with or endorsed by Ravelry."
 format:
   html:
-    theme: cosmo
-    bibliography:   ./assets/references.bib
-    csl:  ./assets/nature.csl
+    theme: minty
+    code-fold: true
+    code-tools: true
     toc: true
+    toc-location: left
+    lightbox: true
+    bibliography: ./assets/references.bib
+    csl: ./assets/nature.csl
 
 
 
