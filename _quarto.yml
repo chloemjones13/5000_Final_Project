@@ -19,27 +19,28 @@ website:
         text: About Me
       - href: report/report.qmd
         text: Report
-      - text: "Technical details"
-        menu: 
-          - text: Data-collection
-            href: technical-details/data-collection/main.ipynb 
-          - text: Data-cleaning
-            href: technical-details/data-cleaning/main.ipynb 
-          - text: Exploratory Data Analysis
-            href: technical-details/eda/main.ipynb 
-          - text: Unsupervised Learning
-            href: technical-details/unsupervised-learning/main.ipynb 
-          - text: Supervised Learning
-            href: technical-details/supervised-learning/main.ipynb 
-          - text: Progress Log
-            href: technical-details/progress-log.qmd
-          - text: LLM usage Log
-            href: technical-details/llm-usage-log.qmd
+      - text: "Technical Details"
+        menu:
+          - href: technical-details/data-collection/main.ipynb
+            text: Data Collection
+          - href: technical-details/data-cleaning/main.ipynb
+            text: Data Cleaning
+          - href: technical-details/eda/main.ipynb
+            text: Exploratory Data Analysis
+          - href: technical-details/unsupervised-learning/main.ipynb
+            text: Unsupervised Learning
+          - href: technical-details/supervised-learning/main.ipynb
+            text: Supervised Learning
+          - href: technical-details/progress-log.qmd
+            text: Progress Log
+          - href: technical-details/llm-usage-log.qmd
+            text: LLM Usage Log
   page-footer:
     center: "Independent student project. Uses the Ravelry API; not affiliated with or endorsed by Ravelry."
+
 format:
   html:
-    theme: quartz
+    theme: [minty, pink.scss]
     code-fold: true
     code-tools: true
     toc: true

@@ -16,15 +16,7 @@ Hello, I'm Chloe Jones! Currently I am a data science graduate student at George
 
 My background is in applied machine learning: a sales enablement computer vision internship at Dell Technologies (2025), an AI/ML internship at Nokia (2026), and research on large-scale electronic health record data at Texas State (2024–2026).
 
-## Academic Interests
-
-- Machine learning in healthcare
-- Large language models
-- Computer vision and deep learning
-- Applying machine learning to problems in public policy
-
 ## Education
 
-- **2022:** Hebron High School
 - **2026:** Texas State University, B.S. in Computer Science
 - **2027 (expected):** Georgetown University, M.S. in Data Science and Analytics
