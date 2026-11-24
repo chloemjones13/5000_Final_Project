@@ -1,0 +1,121 @@
+---
+title: "What Makes a Pattern Popular?"
+subtitle: "A data-driven look at 30,000 knitting and crochet patterns on Ravelry"
+title-block-banner: true
+bibliography: assets/references.bib
+resources:
+  - images/yarn_*.svg
+---
+
+## Introduction
+
+Ravelry is the largest online home for knitters and crocheters. It's a pattern database, a marketplace, and a social network in one. Designers post patterns for free or for sale, and users log the projects they make, favorite and queue patterns they want to try, and rate patterns on quality and difficulty. Ravelry describes its database as the world's most extensive collection of patterns and yarns, with nearly half a million patterns available to download directly on the site and over 9 million members [@ravelry_about].
+
+Every one of those patterns competes for attention. Some get made by thousands of people, and most are made by only a handful. This project uses a random sample of about 30,000 patterns, collected through the Ravelry API [@ravelry_api], to find out what separates the two, and how knitting and crochet patterns differ along the way.
+
+This site walks through the full data science process: collecting the data, cleaning it, exploring it, finding natural groups of patterns, and building models that explain popularity. I've written it for data scientists and for anyone curious about the business side of a craft community, including pattern designers.
+
+## Motivation
+
+I love knitting and crocheting, and someday I'd like to design and sell my own patterns on Ravelry. Before doing that, I want to understand which kinds of patterns actually get made. Is it the yarn, the price, the difficulty, the designer, or the way the pattern is described?
+
+That question matters beyond me. Ravelry works like a marketplace for thousands of independent designers, most of them small sellers, for whom pattern sales are real income. Research on handmade marketplaces like Etsy shows how much invisible work these sellers put into being seen: writing listings, figuring out platform algorithms, and adapting to platform rules [@razaq2022etsy]. Data on what drives engagement could help designers spend that effort where it counts.
+
+Knitting and crochet also share a platform but are different crafts, with different tools, techniques, and communities. Most work on Ravelry focuses on knitting. I want to compare the two side by side: whether crochet patterns are rated easier, priced differently, or made more often, and whether the same things drive popularity in both crafts.
+
+## Research Questions
+
+Comparing knitting and crochet runs through all six questions.
+
+1.  **What predicts a pattern's popularity?** Which features (yarn weight, yardage, price, difficulty, pattern type, designer, time on Ravelry) best predict how many people make and favorite a pattern, and how much does each one matter?
+2.  **Can a pattern's difficulty be predicted from its features?** Which features make a pattern harder, and do they differ between knitting and crochet?
+3.  **How do knitting and crochet patterns differ?** How do the two crafts compare in difficulty, yardage, price, pattern type, and popularity?
+4.  **Do free patterns get more engagement than paid ones?** And what predicts whether a designer charges for a pattern in the first place?
+5.  **What natural "types" of patterns exist?** When patterns are grouped by their features, what clusters appear, and do they line up with craft or pattern type?
+6.  **What do pattern descriptions and tags reveal?** Do the words designers use and the attributes they tag (e.g. "beginner", "in-the-round", "unisex") differ between popular and less popular patterns?
+
+These questions may change as the analysis goes on. Data science is an iterative process.
+
+## Project Overview
+
+| Step | What happens | Answers |
+|------------------------|------------------------|------------------------|
+| **Data collection** | A uniform random sample of pattern IDs pulled through the Ravelry API, so that popular patterns aren't over-represented the way they are in search results | All |
+| **Data cleaning** | Flattening nested JSON, fixing placeholder values, converting prices to USD, measuring time on Ravelry, and standardizing gauge and yardage | All |
+| **Exploratory analysis** | Distributions, knitting vs. crochet comparisons, and free vs. paid patterns | Q3, Q4 |
+| **Unsupervised learning** | Dimensionality reduction and clustering to find pattern "types", plus text features from descriptions and tags | Q5, Q6 |
+| **Supervised learning** | Models that predict popularity and difficulty, with feature importance to explain what drives each | Q1, Q2, Q4 |
+
+The final dataset has about 29,800 patterns (about 17,600 knitting and 12,200 crochet) with information on craft, pattern type and category, yarn weight, yardage, gauge, price, ratings, difficulty, designer, languages, attributes, and the designer's written description.
+
+<!-- Update these links to match your folder names -->
+
+- [Data collection](technical-details/data-collection/main.ipynb)
+- [Data cleaning](technical-details/data-cleaning/main.ipynb)
+
+## Related Work
+
+**Ravelry as a community.** Ravelry has drawn attention from social scientists as a space where a domestic craft becomes social and digital. @orton2014knit studies how new technologies and digital platforms change the experience of knitting as leisure, and @mayne2016feeling looks at how amateur knit and crochet makers find connection online. This work explains *why* people use Ravelry, but it is qualitative and doesn't look at which patterns succeed.
+
+**Computational work on Ravelry.** @prabhumoye2017linguistic used Ravelry forum posts to study social influence. They measured influence by how many members went on to use a pattern mentioned in a post, and found that linguistic features of the posts improved the classification of influence by 3.15%. That supports question 6: the language around a pattern seems to be connected to whether people make it. Among student projects, a Wesleyan project [@ross_knitting_textmining] collected 24,795 Ravelry patterns and used TF-IDF and logistic regression on 11,840 English pattern descriptions to classify construction methods. A previous DSAN 5000 project [@powell_dsan5000] used the Ravelry API to predict pattern type with Naive Bayes and clustering, and found that most clusters mainly separated basic differences between patterns. Both focus on *what kind* of pattern something is, not on how popular it becomes.
+
+**Ratings with few votes.** Ravelry's difficulty ratings are sparse. A project that built a difficulty recommender for knitters found that 80% of Ravelry patterns have fewer than 5 difficulty reviews [@knitpicker]. This is why the cleaning step treats "no votes" as missing rather than 0, and why later steps need to account for how many ratings an average is based on.
+
+**Popularity of online content.** Outside crafts, @szabo2010predicting showed that the long-term popularity of content on Digg and YouTube can be predicted from early attention, with a strong linear relationship between early and later popularity on a log scale. Popularity builds up over time, so a pattern that has been on Ravelry for 15 years has had far more chances to be made than one posted last year. This is why time on Ravelry is a key control in this project.
+
+**The effect of "free."** @shampanier2007zero showed that a price of zero isn't just a low price: people treat free products as more valuable than a standard cost-benefit view predicts and choose them far more often. If that holds on Ravelry, free patterns should get much more engagement than cheap paid ones, which question 4 tests directly.
+
+**The gap.** To my knowledge, no published work models what makes a Ravelry pattern popular, compares knitting and crochet side by side, or uses a uniform random sample rather than search results. This project tries to fill that gap.
+
+## Explore the Project
+
+Use the navigation bar to follow the project from data collection through modeling. To learn more about me, visit the [About Me](aboutMe.qmd) page.
+
+## References
+
+::: {#refs}
+:::
+
+```{=html}
+<style>
+  .yarn-stack img { position: absolute; width: 150px; pointer-events: none; }
+</style>
+<script>
+  // Stack yarn balls down the right side of the page, cycling colors with a random tilt
+  (function () {
+    const COLORS = ["pink", "lavender", "sage", "yellow"];
+    const SIZE = 150;      // ball width in px
+    const SPACING = 300;   // vertical distance between balls in px
+    const GAP = 60;        // space between the text and the balls
+    const angles = [];     // keep each ball's tilt the same when the window is resized
+
+    const layer = document.createElement("div");
+    layer.className = "yarn-stack";
+    document.body.appendChild(layer);
+
+    function place() {
+      layer.innerHTML = "";
+      const main = document.getElementById("quarto-document-content");
+      if (!main) return;
+      const box = main.getBoundingClientRect();
+      if (window.innerWidth - box.right < SIZE + GAP) return;   // not enough room (e.g. phones)
+
+      const top = box.top + window.scrollY;
+      const left = box.right + window.scrollX + GAP;
+      for (let i = 0; top + i * SPACING < top + box.height - SIZE; i++) {
+        if (angles[i] === undefined) angles[i] = Math.floor(Math.random() * 91) - 45;   // -45 to 45 degrees
+        const img = document.createElement("img");
+        img.src = `images/yarn_${COLORS[i % COLORS.length]}.svg`;
+        img.alt = "";
+        img.style.top = `${top + i * SPACING}px`;
+        img.style.left = `${left}px`;
+        img.style.transform = `rotate(${angles[i]}deg)`;
+        layer.appendChild(img);
+      }
+    }
+
+    window.addEventListener("load", place);
+    window.addEventListener("resize", place);
+  })();
+</script>
+```

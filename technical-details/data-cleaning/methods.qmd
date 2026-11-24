@@ -1,1 +1,20 @@
 # Methods
+
+The raw data is a newline-delimited JSON dump of 30,038 Ravelry pattern records pulled through the Ravelry API. Each record is one pattern, and many fields are nested (craft, pattern type, designer, categories, and so on). All feature meanings I got through the Ravelry API documentation (Pattern result object) and by analyzing by hand.
+
+The cleaning goes in this order:
+
+1.  **Load and preview** the raw file and check its schema and missing values.
+    - I always like to load in the data and check its head and NA values to see how much work ill have ahead of me.
+2.  **Structural cleanup**: drop empty columns and duplicate patterns.
+    - Since this dataset has so many columns I decided to drop any columns with over 90% missing and later drop others after further exploration.
+3.  **Scope**: keep only knitting and crochet patterns.
+    - There was 2 other types of patterns but they both had less than 300 so Idecided to drop since no meaningful analysis was gonna come from those.
+4.  **Placeholder values**: turn blank strings and "0 votes" averages into real missing values.
+    - Due to how duckdb handles values there was a lot of ambiguity with NA's nans and 0's, so for any columns where this distinction is important I made sure to take care in processing.
+5.  **Price and availability**: build an availability category, record where patterns are sold, and convert prices to USD.
+6.  **Dates**: parse dates and measure how long each pattern has been on Ravelry.
+7.  **Gauge**: put stitch and row gauge on one scale and flag patterns where gauge doesn't matter.
+8.  **Nested columns**: flatten pattern type, categories, designer, attributes, and languages.
+9.  **Drop columns** that are no longer needed.
+10. **Final check and save** the cleaned table.

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="lavender ball of yarn">
+  <defs><clipPath id="b"><circle cx="95" cy="95" r="75"/></clipPath></defs>
+  <path d="M150 150 C 170 175, 195 170, 195 145" fill="none" stroke="#9b7bb8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="95" cy="95" r="75" fill="#c3a8de"/>
+  <g clip-path="url(#b)" fill="none" stroke="#9b7bb8" stroke-width="4">
+    <path d="M20 45 Q 95 100 170 45"/><path d="M18 75 Q 95 130 172 75"/>
+    <path d="M18 105 Q 95 160 172 105"/><path d="M22 135 Q 95 190 168 135"/>
+    <path d="M60 20 Q 25 95 65 172"/><path d="M85 18 Q 50 95 90 175"/>
+  </g>
+</svg>

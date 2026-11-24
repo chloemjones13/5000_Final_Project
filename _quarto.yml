@@ -13,7 +13,7 @@ website:
       - icon: github
         href: https://github.com/chloemjones13/5000_Final_Project
     left:
-      - href: index.qmd
+      - href: landing.qmd
         text: Home
       - href: aboutMe.qmd
         text: About Me

@@ -2,7 +2,7 @@
 
 Data cleaning is a necessity to prepare data for any kind of analysis from EDA to modeling. Its also not a linear process sometimes as you are preforming EDA or even modeling you might have to go back and remove rows or columns or even add features to aid your process.
 
-However no matter what you need cleaned data for its always best to consider
+However no matter what you need cleaned data for its always best to consider:
 
 - **Managing Missing Data**
 
